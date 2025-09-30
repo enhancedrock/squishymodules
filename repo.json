@@ -1,0 +1,72 @@
+{
+    "meta": {
+        "version": "1",
+        "name": "Official Repo",
+        "description": "The official Squishy module repository.",
+        "url": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/repo.json"
+    },
+    "modules": [
+        {
+            "name": "Catchphrases",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/catchphrases.py",
+            "description": "A gimmick module that responds to pings with one of your defined catchphrases.",
+            "author": "enhancedrock"
+        },
+        {
+            "name": "Autoroles",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/autoroles.py",
+            "description": "A module that automatically assigns roles to any new members.",
+            "author": "enhancedrock"
+        },
+        {
+            "name": "Economy",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/economy.py",
+            "description": "A module that adds a server currency. Primarily a framework for other modules.",
+            "author": "enhancedrock"
+        },
+        {
+            "name": "Casino",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/casino.py",
+            "description": "A module that adds some casino games.",
+            "author": "enhancedrock",
+            "dependencies": [
+                {
+                    "repo": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/repo.json",
+                    "module": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/economy.py"
+                }
+            ]
+        },
+        {
+            "name": "Levelling",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/levelling.py",
+            "description": "A module that adds XP and levelling to your server, with optional role and currency rewards.",
+            "author": "enhancedrock",
+            "dependencies": [
+                {
+                    "repo": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/repo.json",
+                    "module": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/economy.py",
+                    "soft": true
+                }
+            ]
+        },
+        {
+            "name": "React Roles",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/reactroles.py",
+            "description": "A module that lets members self-assign roles by reacting to messages.",
+            "author": "enhancedrock"
+        },
+        {
+            "name": "Welcomer",
+            "version": "1.0.0",
+            "source": "https://raw.githubusercontent.com/enhancedrock/squishy/refs/heads/modules/welcomer.py",
+            "description": "A module that welcomes and farewells members when they join/leave in DMs or a channel.",
+            "author": "enhancedrock"
+        }
+    ]
+}
